@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import 'button'
-import Button from "button";
+import 'button';
+import Button from 'button';
+import {Counter, Designed} from "components";
+
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         >
           Learn React
         </a>
-        <Button/>
+        <Button />
+        <Counter initialCount={0}/>
+        <Designed/>
       </header>
     </div>
   );
