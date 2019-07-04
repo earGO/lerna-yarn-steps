@@ -11,5 +11,7 @@ module.exports = {
             statements: 100
         }
     },
-    testPathIgnorePatterns: ['<rootDir>/packages/(?:.+?)/lib/']
+    testPathIgnorePatterns: ['<rootDir>/packages/(?:.+?)/lib/'],
+    transformIgnorePatterns: ['<rootDir>/node_modules/','/node_modules/'],
+    moduleFileExtensions: ['js', 'jsx', 'json', 'vue'],
 };
