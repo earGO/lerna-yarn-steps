@@ -5,17 +5,47 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js"
+    "build": "lerna exec --parallel --no-private -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
+    "gulp": "lerna run --no-private gulp",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "dev": "start-storybook -p 5555",
+    "coverage": "jest --coveragel",
+    "unit": "jest  --watchAll",
+    "start-app": "cd packages/app && react-scripts start"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@react-workspaces/react-scripts": "3.0.0-alpha-04",
+    "@storybook/react": "^5.1.9",
     "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-inline-react-svg": "^1.1.0",
     "babel-plugin-styled-components": "^1.10.6",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "jest": "^24.8.0",
+    "jest-haste-map": "^24.8.1",
+    "jest-resolve": "^24.8.0",
+    "jest-styled-components": "^6.3.3",
+    "jest-transform-stub": "^2.0.0",
     "lerna": "^3.15.0",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "styled-components": "^4.3.2",
     "webpack": "^4.35.2"
+  },
+  "dependencies": {
+    "@ursip/design-system": "^1.1.0",
+    "prop-types": "^15.7.2",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1"
   }
 }
