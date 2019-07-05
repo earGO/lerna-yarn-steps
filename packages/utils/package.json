@@ -1,0 +1,11 @@
+{
+  "name": "@ursip-box-front/utils",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+
+  "peerDdependencies": {
+
+  },
+  "license": "MIT"
+}

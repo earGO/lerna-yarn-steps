@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@react-workspaces/react-scripts": "3.0.0-alpha-04",
@@ -43,12 +44,25 @@
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "styled-components": "^4.3.2",
+    "cross-env": "5.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
     "webpack": "^4.35.2"
   },
   "dependencies": {
     "@ursip/design-system": "^1.1.0",
     "prop-types": "^15.7.2",
     "react-redux": "^7.1.0",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "redux-dynamic-modules": "5.0.0-alpha.0",
+    "redux-dynamic-modules-core": "5.0.0-alpha.0",
+    "redux-dynamic-modules-react": "5.0.0-alpha.0",
+    "redux-dynamic-modules-saga": "5.0.0-alpha.0",
+    "redux-dynamic-modules-thunk": "5.0.0-alpha.0",
+    "redux-logger": "3.0.6",
+    "redux-saga": "1.0.3",
+    "redux-saga-requests": "0.25.0",
+    "redux-thunk": "2.3.0",
+    "reselect": "4.0.0"
   }
 }

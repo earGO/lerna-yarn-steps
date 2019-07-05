@@ -1,0 +1,35 @@
+{
+  "name": "@ursip-box-front/services",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "ru_ursip": {
+    "services": {
+      "ursip-nsi-service": "http://develop.ursip.local/api/bim-nsi-new-dev/api/v1",
+      "ursip-oshs-service": "http://develop.ursip.local/api/oshs/v1"
+    }
+  },
+
+  "dependencies": {
+
+  },
+  "peerDdependencies": {
+    "prop-types": "^15.6.2",
+    "react-redux": "7.1.0",
+    "redux": "4.0.1",
+    "redux-dynamic-modules": "5.0.0-alpha.0",
+    "redux-dynamic-modules-core": "5.0.0-alpha.0",
+    "redux-dynamic-modules-react": "5.0.0-alpha.0",
+    "redux-dynamic-modules-saga": "5.0.0-alpha.0",
+    "redux-dynamic-modules-thunk": "5.0.0-alpha.0",
+    "redux-logger": "3.0.6",
+    "redux-saga": "1.0.3",
+    "redux-saga-requests": "0.25.0",
+    "redux-thunk": "2.3.0",
+    "reselect": "4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "license": "MIT"
+}
