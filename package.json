@@ -10,8 +10,9 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "dev": "start-storybook -p 5555",
     "coverage": "jest --coveragel",
-    "unit": "jest  --watchAll",
-    "start-app": "cd packages/app && react-scripts start"
+    "unit": "jest --watch",
+    "start-app": "cd packages/app && react-scripts start",
+    "test-app": "cd packages/app && react-scripts test --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -26,10 +27,11 @@
     "babel-plugin-inline-react-svg": "^1.1.0",
     "babel-plugin-styled-components": "^1.10.6",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-connect": "^5.7.0",
-    "jest": "^24.8.0",
+    "jest": "^23.6.0",
     "jest-haste-map": "^24.8.1",
     "jest-resolve": "^24.8.0",
     "jest-styled-components": "^6.3.3",
@@ -37,6 +39,7 @@
     "lerna": "^3.15.0",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
+    "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "styled-components": "^4.3.2",
