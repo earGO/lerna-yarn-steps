@@ -5,12 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
-    "gulp": "gulp",
+    "build": "lerna exec --parallel --no-private -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
+    "gulp": "lerna run --no-private gulp",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "dev": "start-storybook -p 5555",
     "coverage": "jest --coveragel",
-    "unit": "jest  --watchAll"
+    "unit": "jest  --watchAll",
+    "start-app": "cd packages/app && react-scripts start"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
